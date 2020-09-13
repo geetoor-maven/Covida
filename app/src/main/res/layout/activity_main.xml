@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/background">
+
+    <TextView
+        android:id="@+id/cvd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="COVIDA"
+        android:gravity="center"
+        android:textColor="@color/textview"
+        android:textSize="30dp"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:layout_below="@id/cvd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="corona virus data"
+        android:gravity="center"
+        android:textColor="@color/transtextview"
+        android:textSize="25dp"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Developer By shegi-dev"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:textColor="@color/button"
+        android:textSize="15dp"
+        android:fontFamily="monospace"
+        android:textStyle="bold"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+   <androidx.appcompat.widget.Toolbar
+       android:id="@+id/tool"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@color/appbar">
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Provensi Indonesia"
+          android:textAlignment="center"
+          android:textColor="@color/textview"
+          android:fontFamily="monospace"
+          android:textSize="20dp"
+          android:textStyle="bold"/>
+   </androidx.appcompat.widget.Toolbar>
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:layout_marginTop="5dp"
+       android:layout_below="@id/tool"
+       android:id="@+id/rcl_cardviewprovensi"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+   </androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>

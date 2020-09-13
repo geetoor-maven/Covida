@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/appbar">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Covida"
+            android:textAlignment="center"
+            android:textColor="@color/textview"
+            android:fontFamily="monospace"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:ignore="RtlCompat" />
+    </androidx.appcompat.widget.Toolbar>
+
+   <androidx.cardview.widget.CardView
+       android:layout_below="@id/tool"
+       android:id="@+id/card_indonesia"
+       android:layout_width="match_parent"
+       android:layout_height="150dp"
+       android:background="@color/cardview"
+       android:layout_margin="10dp"
+       app:cardCornerRadius="10dp">
+
+       <LinearLayout
+           xmlns:android="http://schemas.android.com/apk/res/android"
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:background="@color/cardview"
+           >
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"
+                   android:text="Indonesia"
+                   android:gravity="center"
+                   android:textSize="20dp"
+                   android:textColor="@color/textview"
+                   android:fontFamily="monospace"
+                   android:layout_marginLeft="10dp"/>
+
+
+           </LinearLayout>
+
+           <!--POSITIF-->
+
+           <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_marginTop="10dp">
+           <TextView
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:text="Total Positif   : "
+               android:textSize="15dp"
+               android:textColor="@color/transtextview"
+               android:fontFamily="monospace"
+               android:layout_marginLeft="10dp"/>
+           <TextView
+               android:id="@+id/txt_totalpositifindonesia"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:text=""
+               android:textSize="15dp"
+               android:textColor="@color/transtextview"
+               android:fontFamily="monospace"
+               android:layout_marginRight="10dp"/>
+
+       </LinearLayout>
+
+           <!--SEMBUH-->
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginTop="5dp">
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"
+                   android:text="Total Sembuh    : "
+                   android:textSize="15dp"
+                   android:textColor="@color/transtextview"
+                   android:fontFamily="monospace"
+                   android:layout_marginLeft="10dp"/>
+               <TextView
+                   android:id="@+id/txt_totalsembuhindonesia"
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"
+                   android:text=""
+                   android:textSize="15dp"
+                   android:textColor="@color/transtextview"
+                   android:fontFamily="monospace"
+                   android:layout_marginRight="10dp"/>
+
+           </LinearLayout>
+
+           <!--MENINGGAL-->
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginTop="5dp">
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"
+                   android:text="Total Meninggal : "
+                   android:textSize="15dp"
+                   android:textColor="@color/transtextview"
+                   android:fontFamily="monospace"
+                   android:layout_marginLeft="10dp"/>
+               <TextView
+                   android:id="@+id/txt_totalmeninggalindonesia"
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"
+                   android:text=""
+                   android:textSize="15dp"
+                   android:textColor="@color/transtextview"
+                   android:fontFamily="monospace"
+                   android:layout_marginRight="10dp"/>
+
+           </LinearLayout>
+
+           <!--DI RAWAT-->
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginTop="5dp">
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"
+                   android:text="Total Di Rawat  : "
+                   android:textSize="15dp"
+                   android:textColor="@color/transtextview"
+                   android:fontFamily="monospace"
+                   android:layout_marginLeft="10dp"/>
+               <TextView
+                   android:id="@+id/txt_totaldirawatindonesia"
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"
+                   android:text=""
+                   android:textSize="15dp"
+                   android:textColor="@color/transtextview"
+                   android:fontFamily="monospace"
+                   android:layout_marginRight="10dp"/>
+
+           </LinearLayout>
+       </LinearLayout>
+
+   </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_global"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/cardview"
+        android:layout_margin="10dp"
+        android:layout_below="@id/card_indonesia"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/cardview"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Global"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:textColor="@color/textview"
+                    android:fontFamily="monospace"
+                    android:layout_marginLeft="10dp"/>
+
+
+            </LinearLayout>
+
+            <!--POSITIF-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Total Positif   : "
+                    android:textSize="15dp"
+                    android:textColor="@color/transtextview"
+                    android:fontFamily="monospace"
+                    android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:id="@+id/txt_totalpositifglobal"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textSize="15dp"
+                    android:textColor="@color/transtextview"
+                    android:fontFamily="monospace"
+                    android:layout_marginRight="10dp"/>
+
+            </LinearLayout>
+
+            <!--SEMBUH-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Total Sembuh    : "
+                    android:textSize="15dp"
+                    android:textColor="@color/transtextview"
+                    android:fontFamily="monospace"
+                    android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:id="@+id/txt_totalsembuhglobal"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textSize="15dp"
+                    android:textColor="@color/transtextview"
+                    android:fontFamily="monospace"
+                    android:layout_marginRight="10dp"/>
+
+            </LinearLayout>
+
+            <!--MENINGGAL-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Total Meninggal : "
+                    android:textSize="15dp"
+                    android:textColor="@color/transtextview"
+                    android:fontFamily="monospace"
+                    android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:id="@+id/txt_totalmeninggalglobal"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textSize="15dp"
+                    android:textColor="@color/transtextview"
+                    android:fontFamily="monospace"
+                    android:layout_marginRight="10dp"/>
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.gms.ads.AdView
+        android:layout_below="@id/card_global"
+        android:layout_marginTop="5dp"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-5731687202742803/7491562429">
+    </com.google.android.gms.ads.AdView>
+
+
+
+
+</RelativeLayout>
